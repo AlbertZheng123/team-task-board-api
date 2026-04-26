@@ -14,6 +14,7 @@ class TaskStatus(str, Enum):
     in_progress = "in_progress"
     done = "done"
     archived = "archived"
+    print("hey")
 
 
 class TaskPriority(str, Enum):
