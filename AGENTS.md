@@ -1,37 +1,111 @@
-# Agent Instructions
+## Mandatory Initialization
 
-This repository participates in a cross-repo contract testing system.
+Before doing anything:
 
-## System Overview
+1. Call brian-query with:
+   "team-task-board-api summary archived tasks contract"
 
-- Backend repo: team-task-board-api
-- Frontend repo: team-task-board-web
-- Frontend workflow: Backend Contract Integration Tests
-- Watcher script: ./scripts/watch-frontend-contract-tests.sh
-- Failure log path: .agent-artifacts/frontend-contract-failure.log
+This loads prior system invariants.
+
+---
+
+## System Context
+
+- Backend: team-task-board-api
+- Frontend: team-task-board-web
+- Contract system: Backend Contract Integration Tests
+
+Known issue (may or may not still exist):
+GET /summary may incorrectly include archived tasks.
+
+---
 
 ## Required Workflow
-
-When implementing or modifying backend behavior:
 
 1. Run:
    ./scripts/watch-frontend-contract-tests.sh
 
 2. If tests FAIL:
-   - Read: .agent-artifacts/frontend-contract-failure.log
-   - Run: python3 scripts/analyze_failure.py
-   - Extract the system invariant
 
-3. BEFORE fixing code:
-   - Call MCP tool to store:
-     - failure log
-     - invariant
-     - root cause
+   a. Read:
+      .agent-artifacts/frontend-contract-failure.log
 
-4. Then fix backend code
+   b. Run:
+      python3 scripts/analyze_failure.py
 
-5. Re-run watcher until tests PASS
+   c. Extract:
+      - failing test file
+      - failing test name
+      - expected vs actual
+      - endpoint involved
+      - root cause
+      - system invariant
 
-## Rule
+---
 
-Never fix a failing contract test without first recording the invariant.
+## Critical Step (DO NOT SKIP)
+
+BEFORE fixing anything:
+
+Call brian-update with:
+
+- failure symptom
+- root cause
+- contract learned (invariant)
+- correct behavior
+- intended fix
+
+Use clear, reusable language.
+
+---
+
+## Verification Step
+
+Immediately call brian-query with:
+"team-task-board-api archived summary contract"
+
+Confirm the invariant is stored.
+
+---
+
+## Fix Implementation
+
+Now fix the backend:
+
+- Update GET /summary
+- Exclude TaskStatus.archived
+- Aggregate only visible tasks
+
+---
+
+## Validation
+
+1. Commit and push:
+   git add .
+   git commit -m "Fix summary contract violation: exclude archived tasks"
+   git push
+
+2. Re-run:
+   ./scripts/watch-frontend-contract-tests.sh
+
+3. Ensure tests PASS
+
+---
+
+## Rules
+
+- Never fix before brian-update
+- Never skip failure log analysis
+- Always verify brian-update
+- Always use MCP tools (no shortcuts)
+
+---
+
+## Final Output
+
+Summarize:
+1. Failure
+2. Invariant discovered
+3. Brain update contents
+4. Fix applied
+5. Final test result

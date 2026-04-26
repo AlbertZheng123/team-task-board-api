@@ -1,391 +1,392 @@
-contract	Set up job	﻿2026-04-26T13:33:10.7934771Z Current runner version: '2.333.1'
-contract	Set up job	2026-04-26T13:33:10.7959809Z ##[group]Runner Image Provisioner
-contract	Set up job	2026-04-26T13:33:10.7960619Z Hosted Compute Agent
-contract	Set up job	2026-04-26T13:33:10.7961556Z Version: 20260213.493
-contract	Set up job	2026-04-26T13:33:10.7962527Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
-contract	Set up job	2026-04-26T13:33:10.7963748Z Build Date: 2026-02-13T00:28:41Z
-contract	Set up job	2026-04-26T13:33:10.7965038Z Worker ID: {f0ec593f-9944-48bd-8451-19b2bd6b54ad}
-contract	Set up job	2026-04-26T13:33:10.7966216Z Azure Region: centralus
-contract	Set up job	2026-04-26T13:33:10.7967132Z ##[endgroup]
-contract	Set up job	2026-04-26T13:33:10.7969774Z ##[group]Operating System
-contract	Set up job	2026-04-26T13:33:10.7970851Z Ubuntu
-contract	Set up job	2026-04-26T13:33:10.7971520Z 24.04.4
-contract	Set up job	2026-04-26T13:33:10.7972300Z LTS
-contract	Set up job	2026-04-26T13:33:10.7972964Z ##[endgroup]
-contract	Set up job	2026-04-26T13:33:10.7973474Z ##[group]Runner Image
-contract	Set up job	2026-04-26T13:33:10.7974079Z Image: ubuntu-24.04
-contract	Set up job	2026-04-26T13:33:10.7974571Z Version: 20260413.86.1
-contract	Set up job	2026-04-26T13:33:10.7975611Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
-contract	Set up job	2026-04-26T13:33:10.7977917Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
-contract	Set up job	2026-04-26T13:33:10.7978957Z ##[endgroup]
-contract	Set up job	2026-04-26T13:33:10.7980407Z ##[group]GITHUB_TOKEN Permissions
-contract	Set up job	2026-04-26T13:33:10.7982599Z Contents: read
-contract	Set up job	2026-04-26T13:33:10.7983145Z Metadata: read
-contract	Set up job	2026-04-26T13:33:10.7983756Z Packages: read
-contract	Set up job	2026-04-26T13:33:10.7984250Z ##[endgroup]
-contract	Set up job	2026-04-26T13:33:10.7986182Z Secret source: Actions
-contract	Set up job	2026-04-26T13:33:10.7987444Z Prepare workflow directory
-contract	Set up job	2026-04-26T13:33:10.8319288Z Prepare all required actions
-contract	Set up job	2026-04-26T13:33:10.8356976Z Getting action download info
-contract	Set up job	2026-04-26T13:33:11.2686539Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
-contract	Set up job	2026-04-26T13:33:11.3873983Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
-contract	Set up job	2026-04-26T13:33:11.4739008Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
-contract	Set up job	2026-04-26T13:33:11.6666872Z Complete job name: contract
-contract	Checkout frontend	﻿2026-04-26T13:33:11.7413922Z ##[group]Run actions/checkout@v4
-contract	Checkout frontend	2026-04-26T13:33:11.7414836Z with:
-contract	Checkout frontend	2026-04-26T13:33:11.7415332Z   repository: AlbertZheng123/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:11.7416123Z   token: ***
-contract	Checkout frontend	2026-04-26T13:33:11.7416550Z   ssh-strict: true
-contract	Checkout frontend	2026-04-26T13:33:11.7416982Z   ssh-user: git
-contract	Checkout frontend	2026-04-26T13:33:11.7417410Z   persist-credentials: true
-contract	Checkout frontend	2026-04-26T13:33:11.7417896Z   clean: true
-contract	Checkout frontend	2026-04-26T13:33:11.7418346Z   sparse-checkout-cone-mode: true
-contract	Checkout frontend	2026-04-26T13:33:11.7418880Z   fetch-depth: 1
-contract	Checkout frontend	2026-04-26T13:33:11.7419299Z   fetch-tags: false
-contract	Checkout frontend	2026-04-26T13:33:11.7419962Z   show-progress: true
-contract	Checkout frontend	2026-04-26T13:33:11.7420409Z   lfs: false
-contract	Checkout frontend	2026-04-26T13:33:11.7420809Z   submodules: false
-contract	Checkout frontend	2026-04-26T13:33:11.7421261Z   set-safe-directory: true
-contract	Checkout frontend	2026-04-26T13:33:11.7422020Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:11.8552357Z Syncing repository: AlbertZheng123/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:11.8554267Z ##[group]Getting Git version info
-contract	Checkout frontend	2026-04-26T13:33:11.8555177Z Working directory is '/home/runner/work/team-task-board-web/team-task-board-web'
-contract	Checkout frontend	2026-04-26T13:33:11.8556499Z [command]/usr/bin/git version
-contract	Checkout frontend	2026-04-26T13:33:11.8594245Z git version 2.53.0
-contract	Checkout frontend	2026-04-26T13:33:11.8622461Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:11.8640391Z Temporarily overriding HOME='/home/runner/work/_temp/2d9c8b9a-ec31-4831-a6eb-6f6c4040d0ab' before making global git config changes
-contract	Checkout frontend	2026-04-26T13:33:11.8643233Z Adding repository directory to the temporary git global config as a safe directory
-contract	Checkout frontend	2026-04-26T13:33:11.8656548Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:11.8690821Z Deleting the contents of '/home/runner/work/team-task-board-web/team-task-board-web'
-contract	Checkout frontend	2026-04-26T13:33:11.8694112Z ##[group]Initializing the repository
-contract	Checkout frontend	2026-04-26T13:33:11.8699744Z [command]/usr/bin/git init /home/runner/work/team-task-board-web/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:11.8815952Z hint: Using 'master' as the name for the initial branch. This default branch name
-contract	Checkout frontend	2026-04-26T13:33:11.8818594Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-contract	Checkout frontend	2026-04-26T13:33:11.8821104Z hint: to use in all of your new repositories, which will suppress this warning,
-contract	Checkout frontend	2026-04-26T13:33:11.8822974Z hint: call:
-contract	Checkout frontend	2026-04-26T13:33:11.8824026Z hint:
-contract	Checkout frontend	2026-04-26T13:33:11.8825348Z hint: 	git config --global init.defaultBranch <name>
-contract	Checkout frontend	2026-04-26T13:33:11.8826824Z hint:
-contract	Checkout frontend	2026-04-26T13:33:11.8828128Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-contract	Checkout frontend	2026-04-26T13:33:11.8830689Z hint: 'development'. The just-created branch can be renamed via this command:
-contract	Checkout frontend	2026-04-26T13:33:11.8832850Z hint:
-contract	Checkout frontend	2026-04-26T13:33:11.8833985Z hint: 	git branch -m <name>
-contract	Checkout frontend	2026-04-26T13:33:11.8835180Z hint:
-contract	Checkout frontend	2026-04-26T13:33:11.8836707Z hint: Disable this message with "git config set advice.defaultBranchName false"
-contract	Checkout frontend	2026-04-26T13:33:11.8839441Z Initialized empty Git repository in /home/runner/work/team-task-board-web/team-task-board-web/.git/
-contract	Checkout frontend	2026-04-26T13:33:11.8844419Z [command]/usr/bin/git remote add origin https://github.com/AlbertZheng123/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:11.8859982Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:11.8861450Z ##[group]Disabling automatic garbage collection
-contract	Checkout frontend	2026-04-26T13:33:11.8864758Z [command]/usr/bin/git config --local gc.auto 0
-contract	Checkout frontend	2026-04-26T13:33:11.8895409Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:11.8896903Z ##[group]Setting up auth
-contract	Checkout frontend	2026-04-26T13:33:11.8903699Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-contract	Checkout frontend	2026-04-26T13:33:11.8935538Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-contract	Checkout frontend	2026-04-26T13:33:11.9236388Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-contract	Checkout frontend	2026-04-26T13:33:11.9265458Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-contract	Checkout frontend	2026-04-26T13:33:11.9480798Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-contract	Checkout frontend	2026-04-26T13:33:11.9511139Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-contract	Checkout frontend	2026-04-26T13:33:11.9732181Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-contract	Checkout frontend	2026-04-26T13:33:11.9766039Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:11.9767601Z ##[group]Fetching the repository
-contract	Checkout frontend	2026-04-26T13:33:11.9776447Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +743b4564a253164ea2b6edd35121db5d683dde0d:refs/remotes/origin/main
-contract	Checkout frontend	2026-04-26T13:33:12.2559278Z From https://github.com/AlbertZheng123/team-task-board-web
-contract	Checkout frontend	2026-04-26T13:33:12.2561423Z  * [new ref]         743b4564a253164ea2b6edd35121db5d683dde0d -> origin/main
-contract	Checkout frontend	2026-04-26T13:33:12.2595623Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:12.2596823Z ##[group]Determining the checkout info
-contract	Checkout frontend	2026-04-26T13:33:12.2599069Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:12.2603997Z [command]/usr/bin/git sparse-checkout disable
-contract	Checkout frontend	2026-04-26T13:33:12.2646495Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-contract	Checkout frontend	2026-04-26T13:33:12.2675026Z ##[group]Checking out the ref
-contract	Checkout frontend	2026-04-26T13:33:12.2681179Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-contract	Checkout frontend	2026-04-26T13:33:12.2728621Z Switched to a new branch 'main'
-contract	Checkout frontend	2026-04-26T13:33:12.2731991Z branch 'main' set up to track 'origin/main'.
-contract	Checkout frontend	2026-04-26T13:33:12.2739088Z ##[endgroup]
-contract	Checkout frontend	2026-04-26T13:33:12.2774201Z [command]/usr/bin/git log -1 --format=%H
-contract	Checkout frontend	2026-04-26T13:33:12.2797320Z 743b4564a253164ea2b6edd35121db5d683dde0d
-contract	Checkout backend	﻿2026-04-26T13:33:12.3109443Z ##[group]Run actions/checkout@v4
-contract	Checkout backend	2026-04-26T13:33:12.3110445Z with:
-contract	Checkout backend	2026-04-26T13:33:12.3111047Z   repository: AlbertZheng123/team-task-board-api
-contract	Checkout backend	2026-04-26T13:33:12.3112025Z   ref: b095b1112cd0a973369c8fc4d33349e0dfc64d0d
-contract	Checkout backend	2026-04-26T13:33:12.3113071Z   path: backend
-contract	Checkout backend	2026-04-26T13:33:12.3113834Z   token: ***
-contract	Checkout backend	2026-04-26T13:33:12.3114311Z   ssh-strict: true
-contract	Checkout backend	2026-04-26T13:33:12.3114829Z   ssh-user: git
-contract	Checkout backend	2026-04-26T13:33:12.3115362Z   persist-credentials: true
-contract	Checkout backend	2026-04-26T13:33:12.3115999Z   clean: true
-contract	Checkout backend	2026-04-26T13:33:12.3116550Z   sparse-checkout-cone-mode: true
-contract	Checkout backend	2026-04-26T13:33:12.3117293Z   fetch-depth: 1
-contract	Checkout backend	2026-04-26T13:33:12.3117822Z   fetch-tags: false
-contract	Checkout backend	2026-04-26T13:33:12.3118374Z   show-progress: true
-contract	Checkout backend	2026-04-26T13:33:12.3118922Z   lfs: false
-contract	Checkout backend	2026-04-26T13:33:12.3119405Z   submodules: false
-contract	Checkout backend	2026-04-26T13:33:12.3120109Z   set-safe-directory: true
-contract	Checkout backend	2026-04-26T13:33:12.3120724Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.4057203Z Syncing repository: AlbertZheng123/team-task-board-api
-contract	Checkout backend	2026-04-26T13:33:12.4065661Z ##[group]Getting Git version info
-contract	Checkout backend	2026-04-26T13:33:12.4068167Z Working directory is '/home/runner/work/team-task-board-web/team-task-board-web/backend'
-contract	Checkout backend	2026-04-26T13:33:12.4115171Z [command]/usr/bin/git version
-contract	Checkout backend	2026-04-26T13:33:12.4151717Z git version 2.53.0
-contract	Checkout backend	2026-04-26T13:33:12.4178449Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.4195296Z Temporarily overriding HOME='/home/runner/work/_temp/5de10640-97f3-40dd-900e-4962320068b2' before making global git config changes
-contract	Checkout backend	2026-04-26T13:33:12.4199843Z Adding repository directory to the temporary git global config as a safe directory
-contract	Checkout backend	2026-04-26T13:33:12.4210041Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web/backend
-contract	Checkout backend	2026-04-26T13:33:12.4239016Z ##[group]Initializing the repository
-contract	Checkout backend	2026-04-26T13:33:12.4244564Z [command]/usr/bin/git init /home/runner/work/team-task-board-web/team-task-board-web/backend
-contract	Checkout backend	2026-04-26T13:33:12.4279904Z hint: Using 'master' as the name for the initial branch. This default branch name
-contract	Checkout backend	2026-04-26T13:33:12.4282831Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-contract	Checkout backend	2026-04-26T13:33:12.4285618Z hint: to use in all of your new repositories, which will suppress this warning,
-contract	Checkout backend	2026-04-26T13:33:12.4287754Z hint: call:
-contract	Checkout backend	2026-04-26T13:33:12.4288585Z hint:
-contract	Checkout backend	2026-04-26T13:33:12.4289900Z hint: 	git config --global init.defaultBranch <name>
-contract	Checkout backend	2026-04-26T13:33:12.4291460Z hint:
-contract	Checkout backend	2026-04-26T13:33:12.4292988Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-contract	Checkout backend	2026-04-26T13:33:12.4295705Z hint: 'development'. The just-created branch can be renamed via this command:
-contract	Checkout backend	2026-04-26T13:33:12.4297673Z hint:
-contract	Checkout backend	2026-04-26T13:33:12.4298605Z hint: 	git branch -m <name>
-contract	Checkout backend	2026-04-26T13:33:12.4299775Z hint:
-contract	Checkout backend	2026-04-26T13:33:12.4300853Z hint: Disable this message with "git config set advice.defaultBranchName false"
-contract	Checkout backend	2026-04-26T13:33:12.4303034Z Initialized empty Git repository in /home/runner/work/team-task-board-web/team-task-board-web/backend/.git/
-contract	Checkout backend	2026-04-26T13:33:12.4308278Z [command]/usr/bin/git remote add origin https://github.com/AlbertZheng123/team-task-board-api
-contract	Checkout backend	2026-04-26T13:33:12.4412039Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.4413808Z ##[group]Disabling automatic garbage collection
-contract	Checkout backend	2026-04-26T13:33:12.4415505Z [command]/usr/bin/git config --local gc.auto 0
-contract	Checkout backend	2026-04-26T13:33:12.4418771Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.4420720Z ##[group]Setting up auth
-contract	Checkout backend	2026-04-26T13:33:12.4422204Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-contract	Checkout backend	2026-04-26T13:33:12.4428532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-contract	Checkout backend	2026-04-26T13:33:12.4612312Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-contract	Checkout backend	2026-04-26T13:33:12.4645036Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-contract	Checkout backend	2026-04-26T13:33:12.4858062Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-contract	Checkout backend	2026-04-26T13:33:12.4887010Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-contract	Checkout backend	2026-04-26T13:33:12.5115252Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-contract	Checkout backend	2026-04-26T13:33:12.5149283Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.5150621Z ##[group]Fetching the repository
-contract	Checkout backend	2026-04-26T13:33:12.5158879Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin b095b1112cd0a973369c8fc4d33349e0dfc64d0d
-contract	Checkout backend	2026-04-26T13:33:12.8084726Z From https://github.com/AlbertZheng123/team-task-board-api
-contract	Checkout backend	2026-04-26T13:33:12.8087546Z  * branch            b095b1112cd0a973369c8fc4d33349e0dfc64d0d -> FETCH_HEAD
-contract	Checkout backend	2026-04-26T13:33:12.8110797Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.8112873Z ##[group]Determining the checkout info
-contract	Checkout backend	2026-04-26T13:33:12.8115136Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.8116665Z [command]/usr/bin/git sparse-checkout disable
-contract	Checkout backend	2026-04-26T13:33:12.8154566Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-contract	Checkout backend	2026-04-26T13:33:12.8180441Z ##[group]Checking out the ref
-contract	Checkout backend	2026-04-26T13:33:12.8184485Z [command]/usr/bin/git checkout --progress --force b095b1112cd0a973369c8fc4d33349e0dfc64d0d
-contract	Checkout backend	2026-04-26T13:33:12.8226355Z Note: switching to 'b095b1112cd0a973369c8fc4d33349e0dfc64d0d'.
-contract	Checkout backend	2026-04-26T13:33:12.8227921Z 
-contract	Checkout backend	2026-04-26T13:33:12.8228629Z You are in 'detached HEAD' state. You can look around, make experimental
-contract	Checkout backend	2026-04-26T13:33:12.8230673Z changes and commit them, and you can discard any commits you make in this
-contract	Checkout backend	2026-04-26T13:33:12.8232388Z state without impacting any branches by switching back to a branch.
-contract	Checkout backend	2026-04-26T13:33:12.8233803Z 
-contract	Checkout backend	2026-04-26T13:33:12.8234495Z If you want to create a new branch to retain commits you create, you may
-contract	Checkout backend	2026-04-26T13:33:12.8236066Z do so (now or later) by using -c with the switch command. Example:
-contract	Checkout backend	2026-04-26T13:33:12.8236998Z 
-contract	Checkout backend	2026-04-26T13:33:12.8237336Z   git switch -c <new-branch-name>
-contract	Checkout backend	2026-04-26T13:33:12.8237950Z 
-contract	Checkout backend	2026-04-26T13:33:12.8238296Z Or undo this operation with:
-contract	Checkout backend	2026-04-26T13:33:12.8238875Z 
-contract	Checkout backend	2026-04-26T13:33:12.8239185Z   git switch -
-contract	Checkout backend	2026-04-26T13:33:12.8239963Z 
-contract	Checkout backend	2026-04-26T13:33:12.8240774Z Turn off this advice by setting config variable advice.detachedHead to false
-contract	Checkout backend	2026-04-26T13:33:12.8242015Z 
-contract	Checkout backend	2026-04-26T13:33:12.8242969Z HEAD is now at b095b11 Change summary to include all tasks instead of visible
-contract	Checkout backend	2026-04-26T13:33:12.8246399Z ##[endgroup]
-contract	Checkout backend	2026-04-26T13:33:12.8268998Z [command]/usr/bin/git log -1 --format=%H
-contract	Checkout backend	2026-04-26T13:33:12.8290673Z b095b1112cd0a973369c8fc4d33349e0dfc64d0d
-contract	Setup Node	﻿2026-04-26T13:33:12.8546616Z ##[group]Run actions/setup-node@v4
-contract	Setup Node	2026-04-26T13:33:12.8547691Z with:
-contract	Setup Node	2026-04-26T13:33:12.8548450Z   node-version: 20
-contract	Setup Node	2026-04-26T13:33:12.8549294Z   always-auth: false
-contract	Setup Node	2026-04-26T13:33:12.8550483Z   check-latest: false
-contract	Setup Node	2026-04-26T13:33:12.8551612Z   token: ***
-contract	Setup Node	2026-04-26T13:33:12.8552384Z ##[endgroup]
-contract	Setup Node	2026-04-26T13:33:13.0326240Z Found in cache @ /opt/hostedtoolcache/node/20.20.2/x64
-contract	Setup Node	2026-04-26T13:33:13.0332704Z ##[group]Environment details
-contract	Setup Node	2026-04-26T13:33:13.3321570Z node: v20.20.2
-contract	Setup Node	2026-04-26T13:33:13.3322906Z npm: 10.8.2
-contract	Setup Node	2026-04-26T13:33:13.3324052Z yarn: 1.22.22
-contract	Setup Node	2026-04-26T13:33:13.3325975Z ##[endgroup]
-contract	Setup Python	﻿2026-04-26T13:33:13.3527908Z ##[group]Run actions/setup-python@v5
-contract	Setup Python	2026-04-26T13:33:13.3528894Z with:
-contract	Setup Python	2026-04-26T13:33:13.3530187Z   python-version: 3.11
-contract	Setup Python	2026-04-26T13:33:13.3531034Z   check-latest: false
-contract	Setup Python	2026-04-26T13:33:13.3532053Z   token: ***
-contract	Setup Python	2026-04-26T13:33:13.3532773Z   update-environment: true
-contract	Setup Python	2026-04-26T13:33:13.3533651Z   allow-prereleases: false
-contract	Setup Python	2026-04-26T13:33:13.3534502Z   freethreaded: false
-contract	Setup Python	2026-04-26T13:33:13.3535258Z ##[endgroup]
-contract	Setup Python	2026-04-26T13:33:13.5195716Z ##[group]Installed versions
-contract	Setup Python	2026-04-26T13:33:13.5313730Z Successfully set up CPython (3.11.15)
-contract	Setup Python	2026-04-26T13:33:13.5316229Z ##[endgroup]
-contract	Install frontend dependencies	﻿2026-04-26T13:33:13.5447480Z ##[group]Run npm install
-contract	Install frontend dependencies	2026-04-26T13:33:13.5448411Z [36;1mnpm install[0m
-contract	Install frontend dependencies	2026-04-26T13:33:13.5497958Z shell: /usr/bin/bash -e {0}
-contract	Install frontend dependencies	2026-04-26T13:33:13.5498849Z env:
-contract	Install frontend dependencies	2026-04-26T13:33:13.5499916Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install frontend dependencies	2026-04-26T13:33:13.5501686Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-contract	Install frontend dependencies	2026-04-26T13:33:13.5503229Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install frontend dependencies	2026-04-26T13:33:13.5504611Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install frontend dependencies	2026-04-26T13:33:13.5505994Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install frontend dependencies	2026-04-26T13:33:13.5507397Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-contract	Install frontend dependencies	2026-04-26T13:33:13.5508578Z ##[endgroup]
-contract	Install frontend dependencies	2026-04-26T13:33:22.9506525Z 
-contract	Install frontend dependencies	2026-04-26T13:33:22.9507770Z added 80 packages, and audited 81 packages in 9s
-contract	Install frontend dependencies	2026-04-26T13:33:22.9508344Z 
-contract	Install frontend dependencies	2026-04-26T13:33:22.9508733Z 24 packages are looking for funding
-contract	Install frontend dependencies	2026-04-26T13:33:22.9509362Z   run `npm fund` for details
-contract	Install frontend dependencies	2026-04-26T13:33:22.9686956Z 
-contract	Install frontend dependencies	2026-04-26T13:33:22.9688041Z 4 moderate severity vulnerabilities
-contract	Install frontend dependencies	2026-04-26T13:33:22.9688888Z 
-contract	Install frontend dependencies	2026-04-26T13:33:22.9689903Z To address all issues (including breaking changes), run:
-contract	Install frontend dependencies	2026-04-26T13:33:22.9690701Z   npm audit fix --force
-contract	Install frontend dependencies	2026-04-26T13:33:22.9690982Z 
-contract	Install frontend dependencies	2026-04-26T13:33:22.9691422Z Run `npm audit` for details.
-contract	Install backend dependencies	﻿2026-04-26T13:33:22.9911347Z ##[group]Run pip install -r requirements.txt
-contract	Install backend dependencies	2026-04-26T13:33:22.9911808Z [36;1mpip install -r requirements.txt[0m
-contract	Install backend dependencies	2026-04-26T13:33:22.9934612Z shell: /usr/bin/bash -e {0}
-contract	Install backend dependencies	2026-04-26T13:33:22.9934931Z env:
-contract	Install backend dependencies	2026-04-26T13:33:22.9935216Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install backend dependencies	2026-04-26T13:33:22.9935665Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-contract	Install backend dependencies	2026-04-26T13:33:22.9936123Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install backend dependencies	2026-04-26T13:33:22.9936534Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install backend dependencies	2026-04-26T13:33:22.9936927Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Install backend dependencies	2026-04-26T13:33:22.9937347Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-contract	Install backend dependencies	2026-04-26T13:33:22.9937683Z ##[endgroup]
-contract	Install backend dependencies	2026-04-26T13:33:23.8266788Z Collecting fastapi==0.116.1 (from -r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:23.9476964Z   Downloading fastapi-0.116.1-py3-none-any.whl.metadata (28 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.0071093Z Collecting uvicorn==0.35.0 (from -r requirements.txt (line 2))
-contract	Install backend dependencies	2026-04-26T13:33:24.0312080Z   Downloading uvicorn-0.35.0-py3-none-any.whl.metadata (6.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.0879350Z Collecting pytest==8.4.1 (from -r requirements.txt (line 3))
-contract	Install backend dependencies	2026-04-26T13:33:24.1119064Z   Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.1437803Z Collecting httpx==0.28.1 (from -r requirements.txt (line 4))
-contract	Install backend dependencies	2026-04-26T13:33:24.1684784Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.2099883Z Collecting starlette<0.48.0,>=0.40.0 (from fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:24.2339951Z   Downloading starlette-0.47.3-py3-none-any.whl.metadata (6.2 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.3856307Z Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:24.4098170Z   Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.4724179Z Collecting typing-extensions>=4.8.0 (from fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:24.4966896Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.5283265Z Collecting click>=7.0 (from uvicorn==0.35.0->-r requirements.txt (line 2))
-contract	Install backend dependencies	2026-04-26T13:33:24.5520858Z   Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.5775982Z Collecting h11>=0.8 (from uvicorn==0.35.0->-r requirements.txt (line 2))
-contract	Install backend dependencies	2026-04-26T13:33:24.6023986Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.6292350Z Collecting iniconfig>=1 (from pytest==8.4.1->-r requirements.txt (line 3))
-contract	Install backend dependencies	2026-04-26T13:33:24.6532411Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.6831311Z Collecting packaging>=20 (from pytest==8.4.1->-r requirements.txt (line 3))
-contract	Install backend dependencies	2026-04-26T13:33:24.7073498Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.7321211Z Collecting pluggy<2,>=1.5 (from pytest==8.4.1->-r requirements.txt (line 3))
-contract	Install backend dependencies	2026-04-26T13:33:24.7565867Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.7905036Z Collecting pygments>=2.7.2 (from pytest==8.4.1->-r requirements.txt (line 3))
-contract	Install backend dependencies	2026-04-26T13:33:24.8146286Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.8478948Z Collecting anyio (from httpx==0.28.1->-r requirements.txt (line 4))
-contract	Install backend dependencies	2026-04-26T13:33:24.8716950Z   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.9060624Z Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 4))
-contract	Install backend dependencies	2026-04-26T13:33:24.9299734Z   Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:24.9611029Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 4))
-contract	Install backend dependencies	2026-04-26T13:33:24.9855209Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
-contract	Install backend dependencies	2026-04-26T13:33:25.0146684Z Collecting idna (from httpx==0.28.1->-r requirements.txt (line 4))
-contract	Install backend dependencies	2026-04-26T13:33:25.0385972Z   Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
-contract	Install backend dependencies	2026-04-26T13:33:25.0637046Z Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:25.0875434Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
-contract	Install backend dependencies	2026-04-26T13:33:25.8962790Z Collecting pydantic-core==2.46.3 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:25.9207393Z   Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
-contract	Install backend dependencies	2026-04-26T13:33:25.9451531Z Collecting typing-inspection>=0.4.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
-contract	Install backend dependencies	2026-04-26T13:33:25.9691718Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.0067581Z Downloading fastapi-0.116.1-py3-none-any.whl (95 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.0383138Z Downloading uvicorn-0.35.0-py3-none-any.whl (66 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.0671420Z Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.1243603Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.1517663Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.1789180Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.2053337Z Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.2567552Z Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
-contract	Install backend dependencies	2026-04-26T13:33:26.3104260Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 36.8 MB/s  0:00:00
-contract	Install backend dependencies	2026-04-26T13:33:26.3342898Z Downloading starlette-0.47.3-py3-none-any.whl (72 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.3605564Z Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.3869866Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.4130107Z Downloading click-8.3.3-py3-none-any.whl (110 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.4393008Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.4651847Z Downloading idna-3.13-py3-none-any.whl (68 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.4913798Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.5169575Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.5430907Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
-contract	Install backend dependencies	2026-04-26T13:33:26.5530119Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 129.3 MB/s  0:00:00
-contract	Install backend dependencies	2026-04-26T13:33:26.5766748Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.6025899Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.6286649Z Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
-contract	Install backend dependencies	2026-04-26T13:33:26.6862224Z Installing collected packages: typing-extensions, pygments, pluggy, packaging, iniconfig, idna, h11, click, certifi, annotated-types, uvicorn, typing-inspection, pytest, pydantic-core, httpcore, anyio, starlette, pydantic, httpx, fastapi
-contract	Install backend dependencies	2026-04-26T13:33:28.4265051Z 
-contract	Install backend dependencies	2026-04-26T13:33:28.4281787Z Successfully installed annotated-types-0.7.0 anyio-4.13.0 certifi-2026.4.22 click-8.3.3 fastapi-0.116.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.13 iniconfig-2.3.0 packaging-26.2 pluggy-1.6.0 pydantic-2.13.3 pydantic-core-2.46.3 pygments-2.20.0 pytest-8.4.1 starlette-0.47.3 typing-extensions-4.15.0 typing-inspection-0.4.2 uvicorn-0.35.0
-contract	Start backend	﻿2026-04-26T13:33:28.7039193Z ##[group]Run uvicorn app.main:app --host 0.0.0.0 --port 8000 &
-contract	Start backend	2026-04-26T13:33:28.7039952Z [36;1muvicorn app.main:app --host 0.0.0.0 --port 8000 &[0m
-contract	Start backend	2026-04-26T13:33:28.7040268Z [36;1mecho $! > backend.pid[0m
-contract	Start backend	2026-04-26T13:33:28.7062991Z shell: /usr/bin/bash -e {0}
-contract	Start backend	2026-04-26T13:33:28.7063223Z env:
-contract	Start backend	2026-04-26T13:33:28.7063466Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Start backend	2026-04-26T13:33:28.7063894Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-contract	Start backend	2026-04-26T13:33:28.7064300Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Start backend	2026-04-26T13:33:28.7064650Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Start backend	2026-04-26T13:33:28.7065006Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Start backend	2026-04-26T13:33:28.7065360Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-contract	Start backend	2026-04-26T13:33:28.7065658Z ##[endgroup]
-contract	Start backend	2026-04-26T13:33:29.1109665Z INFO:     Started server process [2511]
-contract	Start backend	2026-04-26T13:33:29.1110485Z INFO:     Waiting for application startup.
-contract	Start backend	2026-04-26T13:33:29.1112165Z INFO:     Application startup complete.
-contract	Start backend	2026-04-26T13:33:29.1115236Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-contract	Wait for backend	﻿2026-04-26T13:33:33.7135776Z ##[group]Run for i in {1..30}; do
-contract	Wait for backend	2026-04-26T13:33:33.7136128Z [36;1mfor i in {1..30}; do[0m
-contract	Wait for backend	2026-04-26T13:33:33.7136433Z [36;1m  curl -fsS http://localhost:8000/health && exit 0[0m
-contract	Wait for backend	2026-04-26T13:33:33.7136756Z [36;1m  sleep 2[0m
-contract	Wait for backend	2026-04-26T13:33:33.7136936Z [36;1mdone[0m
-contract	Wait for backend	2026-04-26T13:33:33.7137107Z [36;1mexit 1[0m
-contract	Wait for backend	2026-04-26T13:33:33.7158257Z shell: /usr/bin/bash -e {0}
-contract	Wait for backend	2026-04-26T13:33:33.7158555Z env:
-contract	Wait for backend	2026-04-26T13:33:33.7177021Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Wait for backend	2026-04-26T13:33:33.7177703Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-contract	Wait for backend	2026-04-26T13:33:33.7178227Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Wait for backend	2026-04-26T13:33:33.7178601Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Wait for backend	2026-04-26T13:33:33.7178974Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Wait for backend	2026-04-26T13:33:33.7179373Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-contract	Wait for backend	2026-04-26T13:33:33.7179987Z ##[endgroup]
-contract	Wait for backend	2026-04-26T13:33:33.7336809Z {"status":"ok"}
-contract	Run frontend contract tests	﻿2026-04-26T13:33:33.7372903Z ##[group]Run npm run test:contract
-contract	Run frontend contract tests	2026-04-26T13:33:33.7373485Z [36;1mnpm run test:contract[0m
-contract	Run frontend contract tests	2026-04-26T13:33:33.7397430Z shell: /usr/bin/bash -e {0}
-contract	Run frontend contract tests	2026-04-26T13:33:33.7397679Z env:
-contract	Run frontend contract tests	2026-04-26T13:33:33.7397934Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Run frontend contract tests	2026-04-26T13:33:33.7398364Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-contract	Run frontend contract tests	2026-04-26T13:33:33.7398789Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Run frontend contract tests	2026-04-26T13:33:33.7399161Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Run frontend contract tests	2026-04-26T13:33:33.7399775Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-contract	Run frontend contract tests	2026-04-26T13:33:33.7400191Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-contract	Run frontend contract tests	2026-04-26T13:33:33.7400499Z ##[endgroup]
-contract	Run frontend contract tests	2026-04-26T13:33:33.8533903Z 
-contract	Run frontend contract tests	2026-04-26T13:33:33.8535938Z > team-task-board-web@0.1.0 test:contract
-contract	Run frontend contract tests	2026-04-26T13:33:33.8536673Z > vitest run tests/contract
-contract	Run frontend contract tests	2026-04-26T13:33:33.8537188Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.1939467Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.1978568Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/team-task-board-web/team-task-board-web[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.1979983Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5453576Z  [33m❯[39m tests/contract/backend-summary-contract.test.js [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 59[2mms[22m[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5456140Z [31m   [33m❯[31m tests/contract/backend-summary-contract.test.js[2m > [22mBackend summary contract[2m > [22mexcludes archived tasks from visible board summary counts[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5457117Z [31m     → expected 4 to be 3 // Object.is equality[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5559392Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5567225Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5567917Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5571747Z [31m[1m[7m FAIL [27m[22m[39m tests/contract/backend-summary-contract.test.js[2m > [22mBackend summary contract[2m > [22mexcludes archived tasks from visible board summary counts
-contract	Run frontend contract tests	2026-04-26T13:33:34.5573914Z [31m[1mAssertionError[22m: expected 4 to be 3 // Object.is equality[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5575058Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5577131Z - Expected
-contract	Run frontend contract tests	2026-04-26T13:33:34.5577479Z + Received
-contract	Run frontend contract tests	2026-04-26T13:33:34.5577647Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5577762Z - 3
-contract	Run frontend contract tests	2026-04-26T13:33:34.5578028Z + 4
-contract	Run frontend contract tests	2026-04-26T13:33:34.5578171Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5578923Z [36m [2m❯[22m tests/contract/backend-summary-contract.test.js:[2m41:27[22m[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5866489Z     [90m 39| [39m    [35mconst[39m summary [33m=[39m [35mawait[39m summaryRes[33m.[39m[34mjson[39m()[33m;[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5867272Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5885676Z     [90m 40| [39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5916676Z ##[error]AssertionError: expected 4 to be 3 // Object.is equality
+contract	Set up job	﻿2026-04-26T13:45:30.3903960Z Current runner version: '2.333.1'
+contract	Set up job	2026-04-26T13:45:30.3950658Z ##[group]Runner Image Provisioner
+contract	Set up job	2026-04-26T13:45:30.3951874Z Hosted Compute Agent
+contract	Set up job	2026-04-26T13:45:30.3953748Z Version: 20260213.493
+contract	Set up job	2026-04-26T13:45:30.3955087Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+contract	Set up job	2026-04-26T13:45:30.3957957Z Build Date: 2026-02-13T00:28:41Z
+contract	Set up job	2026-04-26T13:45:30.3961831Z Worker ID: {0af47478-7946-4e6b-8353-dadb4abf5cc6}
+contract	Set up job	2026-04-26T13:45:30.3963484Z Azure Region: eastus
+contract	Set up job	2026-04-26T13:45:30.3965173Z ##[endgroup]
+contract	Set up job	2026-04-26T13:45:30.3967811Z ##[group]Operating System
+contract	Set up job	2026-04-26T13:45:30.3968879Z Ubuntu
+contract	Set up job	2026-04-26T13:45:30.3969721Z 24.04.4
+contract	Set up job	2026-04-26T13:45:30.3970671Z LTS
+contract	Set up job	2026-04-26T13:45:30.3971559Z ##[endgroup]
+contract	Set up job	2026-04-26T13:45:30.3972492Z ##[group]Runner Image
+contract	Set up job	2026-04-26T13:45:30.3973550Z Image: ubuntu-24.04
+contract	Set up job	2026-04-26T13:45:30.3974670Z Version: 20260413.86.1
+contract	Set up job	2026-04-26T13:45:30.3976380Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+contract	Set up job	2026-04-26T13:45:30.3979192Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+contract	Set up job	2026-04-26T13:45:30.3980811Z ##[endgroup]
+contract	Set up job	2026-04-26T13:45:30.3982638Z ##[group]GITHUB_TOKEN Permissions
+contract	Set up job	2026-04-26T13:45:30.3985658Z Contents: read
+contract	Set up job	2026-04-26T13:45:30.3986757Z Metadata: read
+contract	Set up job	2026-04-26T13:45:30.3987635Z Packages: read
+contract	Set up job	2026-04-26T13:45:30.3988644Z ##[endgroup]
+contract	Set up job	2026-04-26T13:45:30.3991685Z Secret source: Actions
+contract	Set up job	2026-04-26T13:45:30.3992971Z Prepare workflow directory
+contract	Set up job	2026-04-26T13:45:30.4543778Z Prepare all required actions
+contract	Set up job	2026-04-26T13:45:30.4628849Z Getting action download info
+contract	Set up job	2026-04-26T13:45:30.7450344Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+contract	Set up job	2026-04-26T13:45:30.8847150Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+contract	Set up job	2026-04-26T13:45:30.9766912Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+contract	Set up job	2026-04-26T13:45:31.1947663Z Complete job name: contract
+contract	Checkout frontend	﻿2026-04-26T13:45:31.2803516Z ##[group]Run actions/checkout@v4
+contract	Checkout frontend	2026-04-26T13:45:31.2804951Z with:
+contract	Checkout frontend	2026-04-26T13:45:31.2805521Z   repository: AlbertZheng123/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.2806392Z   token: ***
+contract	Checkout frontend	2026-04-26T13:45:31.2806815Z   ssh-strict: true
+contract	Checkout frontend	2026-04-26T13:45:31.2807243Z   ssh-user: git
+contract	Checkout frontend	2026-04-26T13:45:31.2807691Z   persist-credentials: true
+contract	Checkout frontend	2026-04-26T13:45:31.2808176Z   clean: true
+contract	Checkout frontend	2026-04-26T13:45:31.2808629Z   sparse-checkout-cone-mode: true
+contract	Checkout frontend	2026-04-26T13:45:31.2809168Z   fetch-depth: 1
+contract	Checkout frontend	2026-04-26T13:45:31.2809592Z   fetch-tags: false
+contract	Checkout frontend	2026-04-26T13:45:31.2810055Z   show-progress: true
+contract	Checkout frontend	2026-04-26T13:45:31.2810495Z   lfs: false
+contract	Checkout frontend	2026-04-26T13:45:31.2810915Z   submodules: false
+contract	Checkout frontend	2026-04-26T13:45:31.2811336Z   set-safe-directory: true
+contract	Checkout frontend	2026-04-26T13:45:31.2812076Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.4096808Z Syncing repository: AlbertZheng123/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.4101050Z ##[group]Getting Git version info
+contract	Checkout frontend	2026-04-26T13:45:31.4103389Z Working directory is '/home/runner/work/team-task-board-web/team-task-board-web'
+contract	Checkout frontend	2026-04-26T13:45:31.4107326Z [command]/usr/bin/git version
+contract	Checkout frontend	2026-04-26T13:45:31.4130216Z git version 2.53.0
+contract	Checkout frontend	2026-04-26T13:45:31.4163362Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.4192547Z Temporarily overriding HOME='/home/runner/work/_temp/dd894b7e-b3ed-44f3-b7f8-54060bde3df7' before making global git config changes
+contract	Checkout frontend	2026-04-26T13:45:31.4194966Z Adding repository directory to the temporary git global config as a safe directory
+contract	Checkout frontend	2026-04-26T13:45:31.4201789Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.4244713Z Deleting the contents of '/home/runner/work/team-task-board-web/team-task-board-web'
+contract	Checkout frontend	2026-04-26T13:45:31.4250734Z ##[group]Initializing the repository
+contract	Checkout frontend	2026-04-26T13:45:31.4257905Z [command]/usr/bin/git init /home/runner/work/team-task-board-web/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.4371274Z hint: Using 'master' as the name for the initial branch. This default branch name
+contract	Checkout frontend	2026-04-26T13:45:31.4373315Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+contract	Checkout frontend	2026-04-26T13:45:31.4375295Z hint: to use in all of your new repositories, which will suppress this warning,
+contract	Checkout frontend	2026-04-26T13:45:31.4376586Z hint: call:
+contract	Checkout frontend	2026-04-26T13:45:31.4377025Z hint:
+contract	Checkout frontend	2026-04-26T13:45:31.4377635Z hint: 	git config --global init.defaultBranch <name>
+contract	Checkout frontend	2026-04-26T13:45:31.4378719Z hint:
+contract	Checkout frontend	2026-04-26T13:45:31.4379609Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+contract	Checkout frontend	2026-04-26T13:45:31.4380718Z hint: 'development'. The just-created branch can be renamed via this command:
+contract	Checkout frontend	2026-04-26T13:45:31.4381590Z hint:
+contract	Checkout frontend	2026-04-26T13:45:31.4382049Z hint: 	git branch -m <name>
+contract	Checkout frontend	2026-04-26T13:45:31.4383039Z hint:
+contract	Checkout frontend	2026-04-26T13:45:31.4383831Z hint: Disable this message with "git config set advice.defaultBranchName false"
+contract	Checkout frontend	2026-04-26T13:45:31.4385823Z Initialized empty Git repository in /home/runner/work/team-task-board-web/team-task-board-web/.git/
+contract	Checkout frontend	2026-04-26T13:45:31.4388029Z [command]/usr/bin/git remote add origin https://github.com/AlbertZheng123/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.4427123Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.4428495Z ##[group]Disabling automatic garbage collection
+contract	Checkout frontend	2026-04-26T13:45:31.4432534Z [command]/usr/bin/git config --local gc.auto 0
+contract	Checkout frontend	2026-04-26T13:45:31.4462422Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.4463804Z ##[group]Setting up auth
+contract	Checkout frontend	2026-04-26T13:45:31.4471195Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+contract	Checkout frontend	2026-04-26T13:45:31.4505548Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+contract	Checkout frontend	2026-04-26T13:45:31.4858722Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+contract	Checkout frontend	2026-04-26T13:45:31.4893793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+contract	Checkout frontend	2026-04-26T13:45:31.5130811Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+contract	Checkout frontend	2026-04-26T13:45:31.5164116Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+contract	Checkout frontend	2026-04-26T13:45:31.5420482Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+contract	Checkout frontend	2026-04-26T13:45:31.5457451Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.5458432Z ##[group]Fetching the repository
+contract	Checkout frontend	2026-04-26T13:45:31.5467050Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +743b4564a253164ea2b6edd35121db5d683dde0d:refs/remotes/origin/main
+contract	Checkout frontend	2026-04-26T13:45:31.7125117Z From https://github.com/AlbertZheng123/team-task-board-web
+contract	Checkout frontend	2026-04-26T13:45:31.7127017Z  * [new ref]         743b4564a253164ea2b6edd35121db5d683dde0d -> origin/main
+contract	Checkout frontend	2026-04-26T13:45:31.7153655Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.7154814Z ##[group]Determining the checkout info
+contract	Checkout frontend	2026-04-26T13:45:31.7156587Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.7161995Z [command]/usr/bin/git sparse-checkout disable
+contract	Checkout frontend	2026-04-26T13:45:31.7199173Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+contract	Checkout frontend	2026-04-26T13:45:31.7237668Z ##[group]Checking out the ref
+contract	Checkout frontend	2026-04-26T13:45:31.7246758Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+contract	Checkout frontend	2026-04-26T13:45:31.7306975Z Switched to a new branch 'main'
+contract	Checkout frontend	2026-04-26T13:45:31.7309045Z branch 'main' set up to track 'origin/main'.
+contract	Checkout frontend	2026-04-26T13:45:31.7344998Z ##[endgroup]
+contract	Checkout frontend	2026-04-26T13:45:31.7367966Z [command]/usr/bin/git log -1 --format=%H
+contract	Checkout frontend	2026-04-26T13:45:31.7393776Z 743b4564a253164ea2b6edd35121db5d683dde0d
+contract	Checkout backend	﻿2026-04-26T13:45:31.7751478Z ##[group]Run actions/checkout@v4
+contract	Checkout backend	2026-04-26T13:45:31.7752267Z with:
+contract	Checkout backend	2026-04-26T13:45:31.7752814Z   repository: AlbertZheng123/team-task-board-api
+contract	Checkout backend	2026-04-26T13:45:31.7753617Z   ref: 333ce4c292194d5b0764175a5692cabd35ed5bce
+contract	Checkout backend	2026-04-26T13:45:31.7754738Z   path: backend
+contract	Checkout backend	2026-04-26T13:45:31.7755401Z   token: ***
+contract	Checkout backend	2026-04-26T13:45:31.7755835Z   ssh-strict: true
+contract	Checkout backend	2026-04-26T13:45:31.7756300Z   ssh-user: git
+contract	Checkout backend	2026-04-26T13:45:31.7756774Z   persist-credentials: true
+contract	Checkout backend	2026-04-26T13:45:31.7757331Z   clean: true
+contract	Checkout backend	2026-04-26T13:45:31.7757805Z   sparse-checkout-cone-mode: true
+contract	Checkout backend	2026-04-26T13:45:31.7758392Z   fetch-depth: 1
+contract	Checkout backend	2026-04-26T13:45:31.7758840Z   fetch-tags: false
+contract	Checkout backend	2026-04-26T13:45:31.7759318Z   show-progress: true
+contract	Checkout backend	2026-04-26T13:45:31.7759819Z   lfs: false
+contract	Checkout backend	2026-04-26T13:45:31.7760255Z   submodules: false
+contract	Checkout backend	2026-04-26T13:45:31.7760742Z   set-safe-directory: true
+contract	Checkout backend	2026-04-26T13:45:31.7761299Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:31.8806653Z Syncing repository: AlbertZheng123/team-task-board-api
+contract	Checkout backend	2026-04-26T13:45:31.8816750Z ##[group]Getting Git version info
+contract	Checkout backend	2026-04-26T13:45:31.8818839Z Working directory is '/home/runner/work/team-task-board-web/team-task-board-web/backend'
+contract	Checkout backend	2026-04-26T13:45:31.8862788Z [command]/usr/bin/git version
+contract	Checkout backend	2026-04-26T13:45:31.8903570Z git version 2.53.0
+contract	Checkout backend	2026-04-26T13:45:31.8932164Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:31.8951322Z Temporarily overriding HOME='/home/runner/work/_temp/8e8f1ec2-f677-4edb-b98f-0bbdca7031a7' before making global git config changes
+contract	Checkout backend	2026-04-26T13:45:31.8954737Z Adding repository directory to the temporary git global config as a safe directory
+contract	Checkout backend	2026-04-26T13:45:31.8967886Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web/backend
+contract	Checkout backend	2026-04-26T13:45:31.9002534Z ##[group]Initializing the repository
+contract	Checkout backend	2026-04-26T13:45:31.9010378Z [command]/usr/bin/git init /home/runner/work/team-task-board-web/team-task-board-web/backend
+contract	Checkout backend	2026-04-26T13:45:31.9046800Z hint: Using 'master' as the name for the initial branch. This default branch name
+contract	Checkout backend	2026-04-26T13:45:31.9048966Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+contract	Checkout backend	2026-04-26T13:45:31.9051059Z hint: to use in all of your new repositories, which will suppress this warning,
+contract	Checkout backend	2026-04-26T13:45:31.9052708Z hint: call:
+contract	Checkout backend	2026-04-26T13:45:31.9053460Z hint:
+contract	Checkout backend	2026-04-26T13:45:31.9054678Z hint: 	git config --global init.defaultBranch <name>
+contract	Checkout backend	2026-04-26T13:45:31.9055946Z hint:
+contract	Checkout backend	2026-04-26T13:45:31.9057049Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+contract	Checkout backend	2026-04-26T13:45:31.9058994Z hint: 'development'. The just-created branch can be renamed via this command:
+contract	Checkout backend	2026-04-26T13:45:31.9060656Z hint:
+contract	Checkout backend	2026-04-26T13:45:31.9061495Z hint: 	git branch -m <name>
+contract	Checkout backend	2026-04-26T13:45:31.9062422Z hint:
+contract	Checkout backend	2026-04-26T13:45:31.9063662Z hint: Disable this message with "git config set advice.defaultBranchName false"
+contract	Checkout backend	2026-04-26T13:45:31.9066589Z Initialized empty Git repository in /home/runner/work/team-task-board-web/team-task-board-web/backend/.git/
+contract	Checkout backend	2026-04-26T13:45:31.9069805Z [command]/usr/bin/git remote add origin https://github.com/AlbertZheng123/team-task-board-api
+contract	Checkout backend	2026-04-26T13:45:31.9177484Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:31.9179724Z ##[group]Disabling automatic garbage collection
+contract	Checkout backend	2026-04-26T13:45:31.9181198Z [command]/usr/bin/git config --local gc.auto 0
+contract	Checkout backend	2026-04-26T13:45:31.9183746Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:31.9185236Z ##[group]Setting up auth
+contract	Checkout backend	2026-04-26T13:45:31.9186743Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+contract	Checkout backend	2026-04-26T13:45:31.9191774Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+contract	Checkout backend	2026-04-26T13:45:31.9439291Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+contract	Checkout backend	2026-04-26T13:45:31.9473038Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+contract	Checkout backend	2026-04-26T13:45:31.9710220Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+contract	Checkout backend	2026-04-26T13:45:31.9759143Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+contract	Checkout backend	2026-04-26T13:45:32.0004211Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+contract	Checkout backend	2026-04-26T13:45:32.0043001Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:32.0043952Z ##[group]Fetching the repository
+contract	Checkout backend	2026-04-26T13:45:32.0052337Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 333ce4c292194d5b0764175a5692cabd35ed5bce
+contract	Checkout backend	2026-04-26T13:45:32.1668171Z From https://github.com/AlbertZheng123/team-task-board-api
+contract	Checkout backend	2026-04-26T13:45:32.1670582Z  * branch            333ce4c292194d5b0764175a5692cabd35ed5bce -> FETCH_HEAD
+contract	Checkout backend	2026-04-26T13:45:32.1691942Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:32.1692999Z ##[group]Determining the checkout info
+contract	Checkout backend	2026-04-26T13:45:32.1694821Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:32.1701336Z [command]/usr/bin/git sparse-checkout disable
+contract	Checkout backend	2026-04-26T13:45:32.1742226Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+contract	Checkout backend	2026-04-26T13:45:32.1770849Z ##[group]Checking out the ref
+contract	Checkout backend	2026-04-26T13:45:32.1775776Z [command]/usr/bin/git checkout --progress --force 333ce4c292194d5b0764175a5692cabd35ed5bce
+contract	Checkout backend	2026-04-26T13:45:32.1818889Z Note: switching to '333ce4c292194d5b0764175a5692cabd35ed5bce'.
+contract	Checkout backend	2026-04-26T13:45:32.1820000Z 
+contract	Checkout backend	2026-04-26T13:45:32.1820719Z You are in 'detached HEAD' state. You can look around, make experimental
+contract	Checkout backend	2026-04-26T13:45:32.1822516Z changes and commit them, and you can discard any commits you make in this
+contract	Checkout backend	2026-04-26T13:45:32.1825607Z state without impacting any branches by switching back to a branch.
+contract	Checkout backend	2026-04-26T13:45:32.1827268Z 
+contract	Checkout backend	2026-04-26T13:45:32.1828330Z If you want to create a new branch to retain commits you create, you may
+contract	Checkout backend	2026-04-26T13:45:32.1830901Z do so (now or later) by using -c with the switch command. Example:
+contract	Checkout backend	2026-04-26T13:45:32.1832562Z 
+contract	Checkout backend	2026-04-26T13:45:32.1833249Z   git switch -c <new-branch-name>
+contract	Checkout backend	2026-04-26T13:45:32.1834659Z 
+contract	Checkout backend	2026-04-26T13:45:32.1835269Z Or undo this operation with:
+contract	Checkout backend	2026-04-26T13:45:32.1836275Z 
+contract	Checkout backend	2026-04-26T13:45:32.1836764Z   git switch -
+contract	Checkout backend	2026-04-26T13:45:32.1837475Z 
+contract	Checkout backend	2026-04-26T13:45:32.1838726Z Turn off this advice by setting config variable advice.detachedHead to false
+contract	Checkout backend	2026-04-26T13:45:32.1840835Z 
+contract	Checkout backend	2026-04-26T13:45:32.1841789Z HEAD is now at 333ce4c Change summary endpoint to include all tasks
+contract	Checkout backend	2026-04-26T13:45:32.1845654Z ##[endgroup]
+contract	Checkout backend	2026-04-26T13:45:32.1869238Z [command]/usr/bin/git log -1 --format=%H
+contract	Checkout backend	2026-04-26T13:45:32.1892599Z 333ce4c292194d5b0764175a5692cabd35ed5bce
+contract	Setup Node	﻿2026-04-26T13:45:32.2180176Z ##[group]Run actions/setup-node@v4
+contract	Setup Node	2026-04-26T13:45:32.2181335Z with:
+contract	Setup Node	2026-04-26T13:45:32.2182111Z   node-version: 20
+contract	Setup Node	2026-04-26T13:45:32.2182973Z   always-auth: false
+contract	Setup Node	2026-04-26T13:45:32.2183864Z   check-latest: false
+contract	Setup Node	2026-04-26T13:45:32.2185300Z   token: ***
+contract	Setup Node	2026-04-26T13:45:32.2186089Z ##[endgroup]
+contract	Setup Node	2026-04-26T13:45:32.4253055Z Found in cache @ /opt/hostedtoolcache/node/20.20.2/x64
+contract	Setup Node	2026-04-26T13:45:32.4260115Z ##[group]Environment details
+contract	Setup Node	2026-04-26T13:45:32.7575365Z node: v20.20.2
+contract	Setup Node	2026-04-26T13:45:32.7577129Z npm: 10.8.2
+contract	Setup Node	2026-04-26T13:45:32.7578327Z yarn: 1.22.22
+contract	Setup Node	2026-04-26T13:45:32.7580916Z ##[endgroup]
+contract	Setup Python	﻿2026-04-26T13:45:32.7817616Z ##[group]Run actions/setup-python@v5
+contract	Setup Python	2026-04-26T13:45:32.7818652Z with:
+contract	Setup Python	2026-04-26T13:45:32.7819337Z   python-version: 3.11
+contract	Setup Python	2026-04-26T13:45:32.7820142Z   check-latest: false
+contract	Setup Python	2026-04-26T13:45:32.7821173Z   token: ***
+contract	Setup Python	2026-04-26T13:45:32.7821916Z   update-environment: true
+contract	Setup Python	2026-04-26T13:45:32.7822804Z   allow-prereleases: false
+contract	Setup Python	2026-04-26T13:45:32.7823662Z   freethreaded: false
+contract	Setup Python	2026-04-26T13:45:32.7824640Z ##[endgroup]
+contract	Setup Python	2026-04-26T13:45:32.9745326Z ##[group]Installed versions
+contract	Setup Python	2026-04-26T13:45:32.9867788Z Successfully set up CPython (3.11.15)
+contract	Setup Python	2026-04-26T13:45:32.9869607Z ##[endgroup]
+contract	Install frontend dependencies	﻿2026-04-26T13:45:33.0009259Z ##[group]Run npm install
+contract	Install frontend dependencies	2026-04-26T13:45:33.0010253Z [36;1mnpm install[0m
+contract	Install frontend dependencies	2026-04-26T13:45:33.0060629Z shell: /usr/bin/bash -e {0}
+contract	Install frontend dependencies	2026-04-26T13:45:33.0061561Z env:
+contract	Install frontend dependencies	2026-04-26T13:45:33.0062465Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install frontend dependencies	2026-04-26T13:45:33.0064635Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+contract	Install frontend dependencies	2026-04-26T13:45:33.0066258Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install frontend dependencies	2026-04-26T13:45:33.0067671Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install frontend dependencies	2026-04-26T13:45:33.0069103Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install frontend dependencies	2026-04-26T13:45:33.0070554Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+contract	Install frontend dependencies	2026-04-26T13:45:33.0071763Z ##[endgroup]
+contract	Install frontend dependencies	2026-04-26T13:45:43.1792091Z 
+contract	Install frontend dependencies	2026-04-26T13:45:43.1793260Z added 80 packages, and audited 81 packages in 10s
+contract	Install frontend dependencies	2026-04-26T13:45:43.1793763Z 
+contract	Install frontend dependencies	2026-04-26T13:45:43.1794078Z 24 packages are looking for funding
+contract	Install frontend dependencies	2026-04-26T13:45:43.1795046Z   run `npm fund` for details
+contract	Install frontend dependencies	2026-04-26T13:45:43.1993888Z 
+contract	Install frontend dependencies	2026-04-26T13:45:43.1995515Z 4 moderate severity vulnerabilities
+contract	Install frontend dependencies	2026-04-26T13:45:43.1996018Z 
+contract	Install frontend dependencies	2026-04-26T13:45:43.1996337Z To address all issues (including breaking changes), run:
+contract	Install frontend dependencies	2026-04-26T13:45:43.1996715Z   npm audit fix --force
+contract	Install frontend dependencies	2026-04-26T13:45:43.1996914Z 
+contract	Install frontend dependencies	2026-04-26T13:45:43.1997064Z Run `npm audit` for details.
+contract	Install backend dependencies	﻿2026-04-26T13:45:43.2235423Z ##[group]Run pip install -r requirements.txt
+contract	Install backend dependencies	2026-04-26T13:45:43.2235857Z [36;1mpip install -r requirements.txt[0m
+contract	Install backend dependencies	2026-04-26T13:45:43.2259043Z shell: /usr/bin/bash -e {0}
+contract	Install backend dependencies	2026-04-26T13:45:43.2259330Z env:
+contract	Install backend dependencies	2026-04-26T13:45:43.2259591Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install backend dependencies	2026-04-26T13:45:43.2260021Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+contract	Install backend dependencies	2026-04-26T13:45:43.2260472Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install backend dependencies	2026-04-26T13:45:43.2260869Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install backend dependencies	2026-04-26T13:45:43.2261268Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Install backend dependencies	2026-04-26T13:45:43.2261712Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+contract	Install backend dependencies	2026-04-26T13:45:43.2262034Z ##[endgroup]
+contract	Install backend dependencies	2026-04-26T13:45:44.1055257Z Collecting fastapi==0.116.1 (from -r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:44.1727036Z   Downloading fastapi-0.116.1-py3-none-any.whl.metadata (28 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.2072445Z Collecting uvicorn==0.35.0 (from -r requirements.txt (line 2))
+contract	Install backend dependencies	2026-04-26T13:45:44.2214594Z   Downloading uvicorn-0.35.0-py3-none-any.whl.metadata (6.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.2653049Z Collecting pytest==8.4.1 (from -r requirements.txt (line 3))
+contract	Install backend dependencies	2026-04-26T13:45:44.2691473Z   Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.2889605Z Collecting httpx==0.28.1 (from -r requirements.txt (line 4))
+contract	Install backend dependencies	2026-04-26T13:45:44.2927091Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.3201585Z Collecting starlette<0.48.0,>=0.40.0 (from fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:44.3270008Z   Downloading starlette-0.47.3-py3-none-any.whl.metadata (6.2 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.4472264Z Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:44.4529888Z   Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.4803086Z Collecting typing-extensions>=4.8.0 (from fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:44.4844245Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5037632Z Collecting click>=7.0 (from uvicorn==0.35.0->-r requirements.txt (line 2))
+contract	Install backend dependencies	2026-04-26T13:45:44.5075096Z   Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5184871Z Collecting h11>=0.8 (from uvicorn==0.35.0->-r requirements.txt (line 2))
+contract	Install backend dependencies	2026-04-26T13:45:44.5226120Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5357530Z Collecting iniconfig>=1 (from pytest==8.4.1->-r requirements.txt (line 3))
+contract	Install backend dependencies	2026-04-26T13:45:44.5392848Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5546772Z Collecting packaging>=20 (from pytest==8.4.1->-r requirements.txt (line 3))
+contract	Install backend dependencies	2026-04-26T13:45:44.5581998Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5716285Z Collecting pluggy<2,>=1.5 (from pytest==8.4.1->-r requirements.txt (line 3))
+contract	Install backend dependencies	2026-04-26T13:45:44.5751936Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.5954675Z Collecting pygments>=2.7.2 (from pytest==8.4.1->-r requirements.txt (line 3))
+contract	Install backend dependencies	2026-04-26T13:45:44.6002054Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.6201502Z Collecting anyio (from httpx==0.28.1->-r requirements.txt (line 4))
+contract	Install backend dependencies	2026-04-26T13:45:44.6240320Z   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.6463419Z Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 4))
+contract	Install backend dependencies	2026-04-26T13:45:44.6500077Z   Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.6658854Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 4))
+contract	Install backend dependencies	2026-04-26T13:45:44.6693755Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.6889658Z Collecting idna (from httpx==0.28.1->-r requirements.txt (line 4))
+contract	Install backend dependencies	2026-04-26T13:45:44.6925748Z   Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+contract	Install backend dependencies	2026-04-26T13:45:44.7049708Z Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:44.7091310Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.4575316Z Collecting pydantic-core==2.46.3 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:45.4614952Z   Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.4737101Z Collecting typing-inspection>=0.4.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.116.1->-r requirements.txt (line 1))
+contract	Install backend dependencies	2026-04-26T13:45:45.4780776Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.4957935Z Downloading fastapi-0.116.1-py3-none-any.whl (95 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5032286Z Downloading uvicorn-0.35.0-py3-none-any.whl (66 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5088133Z Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5198846Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5257625Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5317659Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5373142Z Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5454894Z Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5574914Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 198.5 MB/s  0:00:00
+contract	Install backend dependencies	2026-04-26T13:45:45.5615226Z Downloading starlette-0.47.3-py3-none-any.whl (72 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5678407Z Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5739539Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5794137Z Downloading click-8.3.3-py3-none-any.whl (110 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5872923Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5931777Z Downloading idna-3.13-py3-none-any.whl (68 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.5989273Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.6044786Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.6102941Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+contract	Install backend dependencies	2026-04-26T13:45:45.6175621Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 195.2 MB/s  0:00:00
+contract	Install backend dependencies	2026-04-26T13:45:45.6220270Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.6309601Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.6366724Z Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+contract	Install backend dependencies	2026-04-26T13:45:45.7032567Z Installing collected packages: typing-extensions, pygments, pluggy, packaging, iniconfig, idna, h11, click, certifi, annotated-types, uvicorn, typing-inspection, pytest, pydantic-core, httpcore, anyio, starlette, pydantic, httpx, fastapi
+contract	Install backend dependencies	2026-04-26T13:45:47.7730894Z 
+contract	Install backend dependencies	2026-04-26T13:45:47.7748187Z Successfully installed annotated-types-0.7.0 anyio-4.13.0 certifi-2026.4.22 click-8.3.3 fastapi-0.116.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.13 iniconfig-2.3.0 packaging-26.2 pluggy-1.6.0 pydantic-2.13.3 pydantic-core-2.46.3 pygments-2.20.0 pytest-8.4.1 starlette-0.47.3 typing-extensions-4.15.0 typing-inspection-0.4.2 uvicorn-0.35.0
+contract	Start backend	﻿2026-04-26T13:45:48.1152007Z ##[group]Run uvicorn app.main:app --host 0.0.0.0 --port 8000 &
+contract	Start backend	2026-04-26T13:45:48.1152903Z [36;1muvicorn app.main:app --host 0.0.0.0 --port 8000 &[0m
+contract	Start backend	2026-04-26T13:45:48.1153482Z [36;1mecho $! > backend.pid[0m
+contract	Start backend	2026-04-26T13:45:48.1187063Z shell: /usr/bin/bash -e {0}
+contract	Start backend	2026-04-26T13:45:48.1187477Z env:
+contract	Start backend	2026-04-26T13:45:48.1187916Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Start backend	2026-04-26T13:45:48.1188690Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+contract	Start backend	2026-04-26T13:45:48.1189538Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Start backend	2026-04-26T13:45:48.1190250Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Start backend	2026-04-26T13:45:48.1190953Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Start backend	2026-04-26T13:45:48.1191690Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+contract	Start backend	2026-04-26T13:45:48.1192290Z ##[endgroup]
+contract	Start backend	2026-04-26T13:45:48.6325594Z INFO:     Started server process [2407]
+contract	Start backend	2026-04-26T13:45:48.6326366Z INFO:     Waiting for application startup.
+contract	Start backend	2026-04-26T13:45:48.6329076Z INFO:     Application startup complete.
+contract	Start backend	2026-04-26T13:45:48.6332629Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+contract	Wait for backend	﻿2026-04-26T13:45:53.1331928Z ##[group]Run for i in {1..30}; do
+contract	Wait for backend	2026-04-26T13:45:53.1332410Z [36;1mfor i in {1..30}; do[0m
+contract	Wait for backend	2026-04-26T13:45:53.1352928Z [36;1m  curl -fsS http://localhost:8000/health && exit 0[0m
+contract	Wait for backend	2026-04-26T13:45:53.1353315Z [36;1m  sleep 2[0m
+contract	Wait for backend	2026-04-26T13:45:53.1353522Z [36;1mdone[0m
+contract	Wait for backend	2026-04-26T13:45:53.1353705Z [36;1mexit 1[0m
+contract	Wait for backend	2026-04-26T13:45:53.1376374Z shell: /usr/bin/bash -e {0}
+contract	Wait for backend	2026-04-26T13:45:53.1376626Z env:
+contract	Wait for backend	2026-04-26T13:45:53.1376880Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Wait for backend	2026-04-26T13:45:53.1377390Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+contract	Wait for backend	2026-04-26T13:45:53.1377825Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Wait for backend	2026-04-26T13:45:53.1378197Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Wait for backend	2026-04-26T13:45:53.1378588Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Wait for backend	2026-04-26T13:45:53.1378963Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+contract	Wait for backend	2026-04-26T13:45:53.1379290Z ##[endgroup]
+contract	Wait for backend	2026-04-26T13:45:53.1546494Z {"status":"ok"}
+contract	Run frontend contract tests	﻿2026-04-26T13:45:53.1584005Z ##[group]Run npm run test:contract
+contract	Run frontend contract tests	2026-04-26T13:45:53.1584954Z [36;1mnpm run test:contract[0m
+contract	Run frontend contract tests	2026-04-26T13:45:53.1612682Z shell: /usr/bin/bash -e {0}
+contract	Run frontend contract tests	2026-04-26T13:45:53.1612938Z env:
+contract	Run frontend contract tests	2026-04-26T13:45:53.1613203Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Run frontend contract tests	2026-04-26T13:45:53.1613645Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+contract	Run frontend contract tests	2026-04-26T13:45:53.1614075Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Run frontend contract tests	2026-04-26T13:45:53.1614931Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Run frontend contract tests	2026-04-26T13:45:53.1615325Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+contract	Run frontend contract tests	2026-04-26T13:45:53.1615711Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+contract	Run frontend contract tests	2026-04-26T13:45:53.1616015Z ##[endgroup]
+contract	Run frontend contract tests	2026-04-26T13:45:53.2981746Z 
+contract	Run frontend contract tests	2026-04-26T13:45:53.2987479Z > team-task-board-web@0.1.0 test:contract
+contract	Run frontend contract tests	2026-04-26T13:45:53.2988475Z > vitest run tests/contract
+contract	Run frontend contract tests	2026-04-26T13:45:53.2988927Z 
+contract	Run frontend contract tests	2026-04-26T13:45:53.6800228Z 
+contract	Run frontend contract tests	2026-04-26T13:45:53.6804716Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/team-task-board-web/team-task-board-web[39m
+contract	Run frontend contract tests	2026-04-26T13:45:53.6805662Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1132912Z  [33m❯[39m tests/contract/backend-summary-contract.test.js [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 71[2mms[22m[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1135490Z [31m   [33m❯[31m tests/contract/backend-summary-contract.test.js[2m > [22mBackend summary contract[2m > [22mexcludes archived tasks from visible board summary counts[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1136884Z [31m     → expected 4 to be 3 // Object.is equality[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1293359Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1293882Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1304923Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1306928Z [31m[1m[7m FAIL [27m[22m[39m tests/contract/backend-summary-contract.test.js[2m > [22mBackend summary contract[2m > [22mexcludes archived tasks from visible board summary counts
+contract	Run frontend contract tests	2026-04-26T13:45:54.1309217Z [31m[1mAssertionError[22m: expected 4 to be 3 // Object.is equality[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1310084Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1311951Z - Expected
+contract	Run frontend contract tests	2026-04-26T13:45:54.1312266Z + Received
+contract	Run frontend contract tests	2026-04-26T13:45:54.1312423Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1312535Z - 3
+contract	Run frontend contract tests	2026-04-26T13:45:54.1312773Z + 4
+contract	Run frontend contract tests	2026-04-26T13:45:54.1312904Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1313551Z [36m [2m❯[22m tests/contract/backend-summary-contract.test.js:[2m41:27[22m[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1598391Z     [90m 39| [39m    [35mconst[39m summary [33m=[39m [35mawait[39m summaryRes[33m.[39m[34mjson[39m()[33m;[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1600811Z     [90m 40| [39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1601240Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1605002Z     [90m 41| [39m    [34mexpect[39m(summary[33m.[39mtotal)[33m.[39m[34mtoBe[39m([34m3[39m)[33m;[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1641773Z ##[error]AssertionError: expected 4 to be 3 // Object.is equality
 contract	Run frontend contract tests	
 contract	Run frontend contract tests	- Expected
 contract	Run frontend contract tests	+ Received
@@ -396,47 +397,46 @@ contract	Run frontend contract tests
 contract	Run frontend contract tests	 ❯ tests/contract/backend-summary-contract.test.js:41:27
 contract	Run frontend contract tests	
 contract	Run frontend contract tests	
-contract	Run frontend contract tests	2026-04-26T13:33:34.5928975Z     [90m 41| [39m    [34mexpect[39m(summary[33m.[39mtotal)[33m.[39m[34mtoBe[39m([34m3[39m)[33m;[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5930441Z     [90m   | [39m                          [31m^[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5932089Z     [90m 42| [39m    [34mexpect[39m(summary[33m.[39mtodo [33m+[39m summary[33m.[39min_progress [33m+[39m summary[33m.[39mdone)[33m.[39m[34mtoBe[39m(sum…
-contract	Run frontend contract tests	2026-04-26T13:33:34.5933404Z     [90m 43| [39m  })[33m;[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5933722Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5934269Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5934624Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.5935183Z [2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5936155Z [2m      Tests [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5936981Z [2m   Start at [22m 13:33:34
-contract	Run frontend contract tests	2026-04-26T13:33:34.5938496Z [2m   Duration [22m 363ms[2m (transform 17ms, setup 0ms, collect 11ms, tests 59ms, environment 0ms, prepare 66ms)[22m
-contract	Run frontend contract tests	2026-04-26T13:33:34.5939378Z 
-contract	Run frontend contract tests	2026-04-26T13:33:34.6272057Z ##[error]Process completed with exit code 1.
-contract	Post Checkout backend	﻿2026-04-26T13:33:34.6381210Z Post job cleanup.
-contract	Post Checkout backend	2026-04-26T13:33:34.7339583Z [command]/usr/bin/git version
-contract	Post Checkout backend	2026-04-26T13:33:34.7377256Z git version 2.53.0
-contract	Post Checkout backend	2026-04-26T13:33:34.7423313Z Temporarily overriding HOME='/home/runner/work/_temp/3806a061-1f4a-4d08-9ab8-94fb32cabd23' before making global git config changes
-contract	Post Checkout backend	2026-04-26T13:33:34.7424902Z Adding repository directory to the temporary git global config as a safe directory
-contract	Post Checkout backend	2026-04-26T13:33:34.7431405Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web/backend
-contract	Post Checkout backend	2026-04-26T13:33:34.7468167Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-contract	Post Checkout backend	2026-04-26T13:33:34.7502338Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-contract	Post Checkout backend	2026-04-26T13:33:34.7728476Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-contract	Post Checkout backend	2026-04-26T13:33:34.7749736Z http.https://github.com/.extraheader
-contract	Post Checkout backend	2026-04-26T13:33:34.7762566Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-contract	Post Checkout backend	2026-04-26T13:33:34.7792830Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-contract	Post Checkout backend	2026-04-26T13:33:34.8018246Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-contract	Post Checkout backend	2026-04-26T13:33:34.8049743Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-contract	Post Checkout frontend	﻿2026-04-26T13:33:34.8411173Z Post job cleanup.
-contract	Post Checkout frontend	2026-04-26T13:33:34.9369415Z [command]/usr/bin/git version
-contract	Post Checkout frontend	2026-04-26T13:33:34.9413771Z git version 2.53.0
-contract	Post Checkout frontend	2026-04-26T13:33:34.9461449Z Temporarily overriding HOME='/home/runner/work/_temp/0cb37f15-5748-4f37-a8e2-385d1f4061e0' before making global git config changes
-contract	Post Checkout frontend	2026-04-26T13:33:34.9463549Z Adding repository directory to the temporary git global config as a safe directory
-contract	Post Checkout frontend	2026-04-26T13:33:34.9467935Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web
-contract	Post Checkout frontend	2026-04-26T13:33:34.9521969Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-contract	Post Checkout frontend	2026-04-26T13:33:34.9563029Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-contract	Post Checkout frontend	2026-04-26T13:33:34.9814107Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-contract	Post Checkout frontend	2026-04-26T13:33:34.9851022Z http.https://github.com/.extraheader
-contract	Post Checkout frontend	2026-04-26T13:33:34.9855731Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-contract	Post Checkout frontend	2026-04-26T13:33:34.9890942Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-contract	Post Checkout frontend	2026-04-26T13:33:35.0138476Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-contract	Post Checkout frontend	2026-04-26T13:33:35.0178517Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-contract	Complete job	﻿2026-04-26T13:33:35.0552915Z Cleaning up orphan processes
-contract	Complete job	2026-04-26T13:33:35.0816529Z Terminate orphan process: pid (2511) (uvicorn)
-contract	Complete job	2026-04-26T13:33:35.0832393Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+contract	Run frontend contract tests	2026-04-26T13:45:54.1655669Z     [90m   | [39m                          [31m^[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1657511Z [2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1666400Z     [90m 42| [39m    [34mexpect[39m(summary[33m.[39mtodo [33m+[39m summary[33m.[39min_progress [33m+[39m summary[33m.[39mdone)[33m.[39m[34mtoBe[39m(sum…
+contract	Run frontend contract tests	2026-04-26T13:45:54.1667747Z     [90m 43| [39m  })[33m;[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1668059Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1668570Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1668956Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.1669510Z [2m      Tests [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1670296Z [2m   Start at [22m 13:45:53
+contract	Run frontend contract tests	2026-04-26T13:45:54.1671704Z [2m   Duration [22m 448ms[2m (transform 20ms, setup 0ms, collect 16ms, tests 71ms, environment 0ms, prepare 104ms)[22m
+contract	Run frontend contract tests	2026-04-26T13:45:54.1672519Z 
+contract	Run frontend contract tests	2026-04-26T13:45:54.2102622Z ##[error]Process completed with exit code 1.
+contract	Post Checkout backend	﻿2026-04-26T13:45:54.2213334Z Post job cleanup.
+contract	Post Checkout backend	2026-04-26T13:45:54.3311400Z [command]/usr/bin/git version
+contract	Post Checkout backend	2026-04-26T13:45:54.3369078Z git version 2.53.0
+contract	Post Checkout backend	2026-04-26T13:45:54.3429702Z Temporarily overriding HOME='/home/runner/work/_temp/9c3802d2-f974-477f-b937-27523e5047a3' before making global git config changes
+contract	Post Checkout backend	2026-04-26T13:45:54.3431054Z Adding repository directory to the temporary git global config as a safe directory
+contract	Post Checkout backend	2026-04-26T13:45:54.3435475Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web/backend
+contract	Post Checkout backend	2026-04-26T13:45:54.3472923Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+contract	Post Checkout backend	2026-04-26T13:45:54.3508218Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+contract	Post Checkout backend	2026-04-26T13:45:54.3769516Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+contract	Post Checkout backend	2026-04-26T13:45:54.3795439Z http.https://github.com/.extraheader
+contract	Post Checkout backend	2026-04-26T13:45:54.3809156Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+contract	Post Checkout backend	2026-04-26T13:45:54.3840832Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+contract	Post Checkout backend	2026-04-26T13:45:54.4065002Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+contract	Post Checkout backend	2026-04-26T13:45:54.4110144Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+contract	Post Checkout frontend	﻿2026-04-26T13:45:54.4530010Z Post job cleanup.
+contract	Post Checkout frontend	2026-04-26T13:45:54.5623643Z [command]/usr/bin/git version
+contract	Post Checkout frontend	2026-04-26T13:45:54.5667523Z git version 2.53.0
+contract	Post Checkout frontend	2026-04-26T13:45:54.5715255Z Temporarily overriding HOME='/home/runner/work/_temp/8fc0a85b-bcc7-4a0d-829d-f772f02b5264' before making global git config changes
+contract	Post Checkout frontend	2026-04-26T13:45:54.5717048Z Adding repository directory to the temporary git global config as a safe directory
+contract	Post Checkout frontend	2026-04-26T13:45:54.5740368Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/team-task-board-web/team-task-board-web
+contract	Post Checkout frontend	2026-04-26T13:45:54.5810790Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+contract	Post Checkout frontend	2026-04-26T13:45:54.5850574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+contract	Post Checkout frontend	2026-04-26T13:45:54.6172423Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+contract	Post Checkout frontend	2026-04-26T13:45:54.6186682Z http.https://github.com/.extraheader
+contract	Post Checkout frontend	2026-04-26T13:45:54.6201892Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+contract	Post Checkout frontend	2026-04-26T13:45:54.6238842Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+contract	Post Checkout frontend	2026-04-26T13:45:54.6506398Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+contract	Post Checkout frontend	2026-04-26T13:45:54.6540292Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+contract	Complete job	﻿2026-04-26T13:45:54.6909485Z Cleaning up orphan processes
+contract	Complete job	2026-04-26T13:45:54.7238677Z Terminate orphan process: pid (2407) (uvicorn)
+contract	Complete job	2026-04-26T13:45:54.7383171Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
