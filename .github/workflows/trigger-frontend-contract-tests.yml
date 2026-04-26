@@ -1,11 +1,13 @@
 name: Trigger Frontend Contract Tests
 
 on:
-  pull_request:
-    branches: [main]
   push:
     branches:
+      - main
       - "feature/**"
+  pull_request:
+    branches:
+      - main
 
 jobs:
   trigger:
