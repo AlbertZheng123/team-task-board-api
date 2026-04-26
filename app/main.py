@@ -113,10 +113,11 @@ def update_task(task_id: str, payload: TaskUpdate) -> Task:
 
 @app.get("/summary")
 def get_summary() -> dict[str, int]:
+    visible_tasks = [task for task in TASKS if task.status != TaskStatus.archived]
     return {
-        "total": len(TASKS),
-        "todo": sum(task.status == TaskStatus.todo for task in TASKS),
-        "in_progress": sum(task.status == TaskStatus.in_progress for task in TASKS),
-        "done": sum(task.status == TaskStatus.done for task in TASKS),
+        "total": len(visible_tasks),
+        "todo": sum(task.status == TaskStatus.todo for task in visible_tasks),
+        "in_progress": sum(task.status == TaskStatus.in_progress for task in visible_tasks),
+        "done": sum(task.status == TaskStatus.done for task in visible_tasks),
     }
 
